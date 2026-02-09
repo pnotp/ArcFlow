@@ -31,7 +31,6 @@ Built on large-scale models (Qwen-Image-20B and FLUX.1-dev), ArcFlow only fine-t
 - [x] ArcFlow-FLUX-12B
 - [x] Inference Code
 - [x] Training Code
-- [ ] Multiple-GPU Inference Code
 
 ## 🔑 Quickstart
 
@@ -58,6 +57,8 @@ python inference_qwen.py
 # or
 python inference_flux.py
 ```
+
+Note that our inference requires ~57GB for ArcFlow-Qwen and ~34GB for ArcFlow-FLUX. To reduce the GPU memory cost, replace the `pipe = pipe.to('cuda')` with `pipe.enable_model_cpu_offload()`, which reduces the inference of ArcFlow-Qwen to ~41GB and ArcFlow-FLUX to ~25GB. 
 
 ### Model Training
 

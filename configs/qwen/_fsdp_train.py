@@ -8,6 +8,10 @@ train_cfg = dict(
 optimizer = {
     'diffusion': dict(
         type='AdamW', lr=1e-4, betas=(0.9, 0.95), weight_decay=0.0,
+        paramwise_cfg=dict(
+            custom_keys={
+                'proj_out_loggamma': dict(lr_mult=0.1),
+            }),
     ),
 }
 lr_config = dict(

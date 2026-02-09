@@ -25,4 +25,3 @@ build/
 !/data/imagenet/imagenet1000_clsidx_to_labels.txt
 output
 wandb
-*.png

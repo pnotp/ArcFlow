@@ -1,12 +1,15 @@
 # ~65GB VRAM
 
-model = dict(
-    # text_encoder=dict(
-    #     type='PretrainedFluxTextEncoder'
-    # ),
+model = dict( 
     diffusion=dict(
         denoising=dict(
-            freeze_exclude_autocast_dtype='bfloat16')))
+            freeze_exclude_autocast_dtype='bfloat16')),
+    
+    # uncomment the following to use text encoder when training    
+    # text_encoder=dict(
+    #     type='PretrainedFluxTextEncoder'
+    # )
+)
 train_cfg = dict(
     # grad_accum_batch_size=1,  # uncomment this line to reduce VRAM usage to ~45GB
     diffusion_grad_clip=50.0,

@@ -4,10 +4,13 @@ model = dict(
     diffusion=dict(
         denoising=dict(
             freeze_exclude_autocast_dtype='bfloat16')),
+    
+    # uncomment the following to use text encoder when training
     # text_encoder=dict(
     #     type='PretrainedQwenImageTextEncoder',
     #     pad_seq_len=512,
-    ))
+    # )
+)
 train_cfg = dict(
     grad_accum_batch_size=4,
     diffusion_grad_clip=50.0,

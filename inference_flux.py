@@ -7,7 +7,7 @@ pipe = ArcFluxPipeline.from_pretrained(
     torch_dtype=torch.bfloat16)
 
 adapter_name = pipe.load_arcflow_adapter(  # you may later call `pipe.set_adapters([adapter_name, ...])` to combine other adapters (e.g., style LoRAs)
-    'ymyy307/ArcFlow-FLUX',
+    'ymyy307/ArcFlow',
     subfolder='arcflow-flux-2steps',
     target_module_name='transformer')
 

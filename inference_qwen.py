@@ -7,7 +7,7 @@ pipe = ArcQwenImagePipeline.from_pretrained(
     torch_dtype=torch.bfloat16)
 
 adapter_name = pipe.load_arcflow_adapter(  # you may later call `pipe.set_adapters([adapter_name, ...])` to combine other adapters (e.g., style LoRAs)
-    'ymyy307/ArcFlow-Qwen',
+    'ymyy307/ArcFlow',
     subfolder='arcflow-qwen-2steps',
     target_module_name='transformer')
 

@@ -1,9 +1,9 @@
 # ~65GB VRAM
 
 model = dict(
-    text_encoder=dict(
-        type='PretrainedFluxTextEncoder'
-    ),
+    # text_encoder=dict(
+    #     type='PretrainedFluxTextEncoder'
+    # ),
     diffusion=dict(
         denoising=dict(
             freeze_exclude_autocast_dtype='bfloat16')))

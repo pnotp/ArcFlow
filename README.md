@@ -1,9 +1,14 @@
 # ArcFlow
-<a href='https://huggingface.co/ymyy307/ArcFlow/tree/main'><img src='https://img.shields.io/badge/HuggingFace-Model-orange'></a>  
+<a href='https://arxiv.org/abs/2602.09014'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/ymyy307/ArcFlow/tree/main'><img src='https://img.shields.io/badge/HuggingFace-Model-orange'></a>  
 
 ArcFlow: Unleashing 2-Step Text-to-Image Generation via High-Precision Non-Linear Flow Distillation
 <br/>
-Zihan Yang<sup>1</sup>, Shuyuan Tu<sup>1</sup>, Licheng Zhang<sup>1</sup>, Qi Dai<sup>2</sup>, Yu-Gang Jiang<sup>1</sup>, Zuxuan Wu<sup>1</sup>
+Zihan Yang<sup>1</sup>, 
+[Shuyuan Tu](https://github.com/Francis-Rings)<sup>1</sup>, 
+Licheng Zhang<sup>1</sup>, 
+[Qi Dai](https://scholar.google.com/citations?hl=en&user=NSJY12IAAAAJ)<sup>2</sup>, 
+[Yu-Gang Jiang](https://scholar.google.com/citations?hl=en&user=f3_FP8AAAAAJ)<sup>1</sup>, 
+[Zuxuan Wu](https://zxwu.azurewebsites.net/)<sup>1</sup>
 <br/>
 [<sup>1</sup>Fudan University; <sup>2</sup>Microsoft Research Asia]
 
@@ -67,7 +72,7 @@ Follow the instructions in the following links to reproduce the main results in 
 - [Distilling Qwen-Image](configs/qwen/README.md)
 - [Distilling FLUX](configs/flux/README.md)
 
-By default, checkpoints will be saved into [checkpoints/](checkpoints/), logs will be saved into [work_dirs/](work_dirs/). These directories can be changed by modifying the config file (AWS S3 URLs are supported).
+By default, checkpoints will be saved into [checkpoints/](checkpoints/), logs will be saved into [work_dirs/](work_dirs/). These directories can be changed by modifying the config file.
 If existing checkpoints are found, training will automatically resume from the latest checkpoint. The training logs can be plotted using Tensorboard. Run the following command to start Tensorboard:
 ```bash
 tensorboard --logdir work_dirs/
@@ -91,5 +96,13 @@ Thanks to [Qwen-Image](https://huggingface.co/Qwen/Qwen-Image), [FLUX](https://h
 
 ## Citation
 ```
-
+@misc{yang2026arcflowunleashing2steptexttoimage,
+      title={ArcFlow: Unleashing 2-Step Text-to-Image Generation via High-Precision Non-Linear Flow Distillation}, 
+      author={Zihan Yang and Shuyuan Tu and Licheng Zhang and Qi Dai and Yu-Gang Jiang and Zuxuan Wu},
+      year={2026},
+      eprint={2602.09014},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.09014}, 
+}
 ```

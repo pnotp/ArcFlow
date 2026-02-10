@@ -64,11 +64,13 @@ python inference_qwen.py
 python inference_flux.py
 ```
 
+You can change the `nfe` in our inference code to test different generation performance for any `nfe` above 2.
+
 Note that our inference requires ~57GB for ArcFlow-Qwen and ~34GB for ArcFlow-FLUX. To reduce the GPU memory cost, replace the `pipe = pipe.to('cuda')` with `pipe.enable_model_cpu_offload()`, which reduces the inference of ArcFlow-Qwen to ~41GB and ArcFlow-FLUX to ~25GB. 
 
 ### Model Training
 
-Follow the instructions in the following links to reproduce the main results in the paper:
+Follow the instructions in the following links to reproduce the training in the paper:
 - [Distilling Qwen-Image](configs/qwen/README.md)
 - [Distilling FLUX](configs/flux/README.md)
 
@@ -89,6 +91,14 @@ dict(
 To export a model checkpoint to diffusers safetensors for inference, run the following command after training:
 ```bash
 python export_arcflow_to_diffusers.py <PATH_TO_CONFIG> --ckpt <PATH_TO_CKPT> --out-dir <OUTPUT_DIR>
+```
+
+To use your own trained checkpoint for inference, use the above code to load the custom checkpoint in the inference code:
+```
+# use your own local folder
+adapter_name = pipe.load_arcflow_adapter(  
+    '{your safetensors folder}',
+    target_module_name='transformer')
 ```
 
 ### Acknowledgments

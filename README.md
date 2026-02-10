@@ -31,6 +31,7 @@ Built on large-scale models (Qwen-Image-20B and FLUX.1-dev), ArcFlow only fine-t
 - [x] ArcFlow-FLUX-12B
 - [x] Inference Code
 - [x] Training Code
+- [ ] Multi-Gpu Inference
 
 ## 🔑 Quickstart
 

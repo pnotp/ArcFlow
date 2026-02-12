@@ -3,7 +3,7 @@
 
 ArcFlow: Unleashing 2-Step Text-to-Image Generation via High-Precision Non-Linear Flow Distillation
 <br/>
-Zihan Yang<sup>1</sup>, 
+[Zihan Yang](https://pnotp.github.io/)<sup>1</sup>, 
 [Shuyuan Tu](https://github.com/Francis-Rings)<sup>1</sup>, 
 Licheng Zhang<sup>1</sup>, 
 [Qi Dai](https://scholar.google.com/citations?hl=en&user=NSJY12IAAAAJ)<sup>2</sup>, 

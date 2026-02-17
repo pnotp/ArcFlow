@@ -1,7 +1,7 @@
 _base_ = ['./_ddp_train.py', './_data_trainval.py']
 
-num_intermediate_states = 2
-nfe = 4
+num_intermediate_states = 4
+nfe = 2
 num_gaussians = 16
 num_decay_iters = 1000
 timestep_ratio = 1.0

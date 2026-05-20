@@ -101,8 +101,13 @@ adapter_name = pipe.load_arcflow_adapter(
     target_module_name='transformer')
 ```
 
-### Acknowledgments
+## Acknowledgments
 Thanks to [Qwen-Image](https://huggingface.co/Qwen/Qwen-Image), [FLUX](https://huggingface.co/black-forest-labs/FLUX.1-dev), [pi-Flow](https://github.com/Lakonik/piFlow), [TwinFlow](https://github.com/inclusionAI/TwinFlow), [Qwen-Image-Lightning](https://github.com/ModelTC/Qwen-Image-Lightning), [SenseFlow](https://github.com/XingtongGe/SenseFlow) for open-sourcing their models and code, which provided valuable references and support for this project. Their contributions to the open-source community are truly appreciated.
+
+## Contact
+If you have any suggestions or find our work helpful, feel free to contact us.
+
+Email: ymyy307@gmail.com ; francisshuyuan@gmail.com
 
 ## Citation
 ```
